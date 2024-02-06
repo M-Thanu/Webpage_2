@@ -2,9 +2,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="https://cdn.tailwindcss.com"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <style>
+    <!--<style>
         html, body {
             height: 100%;
             background-color: #EAF0F7;
@@ -54,48 +55,54 @@
         tr:hover {
             background-color: #D4EFFB;
         }
-    </style>
+    </style>-->
     <title>Stylish Table</title>
 </head>
-<body>
-
-    <table>
-        <thead>
-            <tr>
-                <th> Course </th>
-                <th> Duration </th>
-                <th> Class Mode </th>
-                <th> Lecturer </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td> Python Programming </td>
-                <td> 2 months </td>
-                <td> Both </td>
-                <td> Nick Sharon </td>
-            </tr>
-            <tr>
-                <td> Java Programming </td>
-                <td> 3 months </td>
-                <td> Virtual </td>
-                <td> Aayush Senan </td>
-            </tr>
-            <tr>
-                <td> C Programming </td>
-                <td> 1 month </td>
-                <td> Direct </td>
-                <td> Trivia McDonald </td>
-            </tr>
-            <tr>
-                <td> C++ Programming </td>
-                <td> 2 months </td>
-                <td> Both </td>
-                <td> Bella Knight </td>
-            </tr>
-        </tbody>
-    </table>
-
+<body class="bg-blue-100 place-items-center">
+    <div class="flex flex-col">
+        <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
+          <div class="inline-block min-w-full py-2 sm:px-6 lg:px-8">
+            <div class="overflow-hidden">
+                <table class="min-w-full text-left text-sm font-light bg-slate-200 my-28 mx-auto">
+                    <thead class="bg-blue-300 text-indigo-700 text-2xl border-b font-medium dark:border-neutral-500">
+                        <tr>
+                            <th scope="col" class="px-6 py-4"> Course </th>
+                            <th scope="col" class="px-6 py-4"> Duration </th>
+                            <th scope="col" class="px-6 py-4"> Class Mode </th>
+                            <th scope="col" class="px-6 py-4"> Lecturer </th>
+                        </tr>
+                    </thead>
+                    <tbody class="text-sky-800 text-xl">
+                        <tr class="hover:bg-sky-200 border-b dark:border-neutral-500">
+                            <td class="whitespace-nowrap px-6 py-4"> Python Programming </td>
+                            <td class="whitespace-nowrap px-6 py-4"> 2 months </td>
+                            <td class="whitespace-nowrap px-6 py-4"> Both </td>
+                            <td class="whitespace-nowrap px-6 py-4"> Nick Sharon </td>
+                        </tr>
+                        <tr class="hover:bg-sky-200 border-b dark:border-neutral-500">
+                            <td class="whitespace-nowrap px-6 py-4"> Java Programming </td>
+                            <td class="whitespace-nowrap px-6 py-4"> 3 months </td>
+                            <td class="whitespace-nowrap px-6 py-4"> Virtual </td>
+                            <td class="whitespace-nowrap px-6 py-4"> Aayush Senan </td>
+                        </tr>
+                        <tr class="hover:bg-sky-200 border-b dark:border-neutral-500">
+                            <td class="whitespace-nowrap px-6 py-4"> C Programming </td>
+                            <td class="whitespace-nowrap px-6 py-4"> 1 month </td>
+                            <td class="whitespace-nowrap px-6 py-4"> Direct </td>
+                            <td class="whitespace-nowrap px-6 py-4"> Trivia McDonald </td>
+                        </tr>
+                        <tr class="hover:bg-sky-200 border-b dark:border-neutral-500">
+                            <td class="whitespace-nowrap px-6 py-4"> C++ Programming </td>
+                            <td class="whitespace-nowrap px-6 py-4"> 2 months </td>
+                            <td class="whitespace-nowrap px-6 py-4"> Both </td>
+                            <td class="whitespace-nowrap px-6 py-4"> Bella Knight </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    </div>
 </body>
 </html>
   
